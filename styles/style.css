@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Open+Sans&display=swap');
+
+/* ---------------------
+       bodystyles 
+   ----------------------*/
+.body {
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+}
+
+/* -----------------------------
+        top-section styles
+   ----------------------------- */
+.top-section {
+    margin: 30px 120px 0px 120px;
+    height: 550px;
+    border-radius: 20px;
+    background-image: linear-gradient(to left, #7c76762b, #242020d1), url('/messi.jpg');
+    background-repeat: no-repeat;
+}
+
+h1 {
+    color: white;
+    width: 400px;
+    padding-top: 130px;
+    padding-left: 40px;
+    font-size: 45px;
+}
+
+.website-details {
+    color: white;
+    padding-left: 40px;
+    width: 350px;
+    font-size: 15px;
+}
