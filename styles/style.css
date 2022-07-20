@@ -19,10 +19,11 @@ body {
     border-radius: 20px;
     background-image: linear-gradient(to left, #7c76762b, #242020d1), url('/images/messi.jpg');
     background-repeat: no-repeat;
+    background-size: cover;
 }
 
 /* -----------------------------------
-       detail styles
+         website details
    ----------------------------------- */
 h1 {
     color: white;
@@ -34,7 +35,7 @@ h1 {
 
 .website-details {
     color: white;
-    padding-left: 40px;
+    padding-left: 20px;
     width: 350px;
     font-size: 15px;
 }
@@ -258,3 +259,109 @@ footer span {
 
 
 /* ------------for tablet ----------- */
+@media screen and (min-width:481px) and (max-width:768px) {
+    .top-section {
+        margin: 30px 50px 55px 40px;
+        height: 500px;
+    }
+
+    .website-details {
+        padding-left: 20px;
+    }
+
+    .middle-section {
+        flex-direction: column;
+        padding-left: 19px;
+    }
+
+    .option-bar {
+        width: 90vw;
+        flex-direction: row;
+        height: 100px;
+        margin-bottom: 40px;
+        background-color: #bbf1bdc2;
+        border: none;
+        margin-left: 20px;
+    }
+
+    .blogs {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    #hidden-blog {
+        display: none;
+    }
+
+    .view-button {
+        visibility: visible;
+        margin-right: 35px;
+    }
+}
+
+/* ------------------- for mobile ----------------------- */
+@media screen and (min-width:320px) and (max-width:480px) {
+    .top-section {
+        margin: 0px 0px 60px 23px;
+        height: 613px;
+        background-position: top;
+    }
+
+    h1 {
+        padding-top: 90px;
+        padding-left: 28px;
+        font-size: 35px;
+    }
+
+    .website-details {
+        padding-left: 9px;
+        font-size: 12px;
+    }
+
+    .middle-section {
+        flex-direction: column;
+    }
+
+    .animation-box {
+        margin-left: 95px;
+        margin-top: 22px;
+    }
+
+    .option-bar {
+        width: 90vw;
+        height: 190px;
+        margin-bottom: 30px;
+        background-color: #bbf1bdc2;
+        border: none;
+        margin-left: 20px;
+    }
+
+    .blogs {
+        grid-template-columns: repeat(1, 1fr);
+        row-gap: 20px;
+        padding-left: 97px;
+    }
+
+    #hidden-blog {
+        display: none;
+    }
+
+    footer {
+        height: 400px;
+        padding-right: 93px;
+        width: 84vw;
+    }
+
+    .footer-header {
+        padding-left: 65px;
+    }
+
+    .footer-info>p {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .social-links {
+        padding-left: 60px;
+    }
+}
