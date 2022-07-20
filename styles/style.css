@@ -12,10 +12,10 @@
         top-section styles
    ----------------------------- */
 .top-section {
-    margin: 30px 120px 0px 120px;
+    margin: 30px 120px 80px 120px;
     height: 550px;
     border-radius: 20px;
-    background-image: linear-gradient(to left, #7c76762b, #242020d1), url('/messi.jpg');
+    background-image: linear-gradient(to left, #7c76762b, #242020d1), url('/images/messi.jpg');
     background-repeat: no-repeat;
 }
 
@@ -42,18 +42,68 @@ h1 {
    ---------------------------- */
 .live-button {
     margin-left: 40px;
-    height: 30px;
-    width: 100px;
-    font-weight: 600;
+    padding: 14px;
+    font-weight: 794;
+    color: rgb(39, 3, 73);
     border: none;
     border-radius: 5px;
-    background-color: rgb(248, 248, 136);
-    transition: width 1.5s ease-out, hight 1.5s, transform .5s;
+    background-image: linear-gradient(to left, #cd84f1, #7efff5, #fd7272d2);
+    cursor: pointer;
+    background-size: 200%;
+    transition: 0.7s ease-out;
 }
 
 .live-button:hover {
-    width: 108px;
-    height: 32px;
-    transform: scale(1.025)translate(3px, -3px);
-    background-color: rgb(212, 239, 248);
+    background-position: right;
+}
+
+/* -----------------------------------------
+                middle section
+   -----------------------------------------  */
+.middle-section {
+    display: flex;
+}
+
+.option-bar {
+    width: 257px;
+    height: 285px;
+    margin-left: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: black;
+
+}
+
+.option-bar a {
+    text-decoration: none;
+}
+
+.option {
+    width: 190px;
+    text-align: center;
+    padding: 16px 0;
+    border-radius: 5px;
+    color: black;
+    font-weight: bold;
+    background-color: white;
+}
+
+.blogs {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    column-gap: 20px;
+    row-gap: 20px;
+    padding-left: 30px;
+}
+
+.blog {
+    display: flex;
+    flex-direction: column;
+    width: 254px;
+    border: 1px solid gray;
 }
