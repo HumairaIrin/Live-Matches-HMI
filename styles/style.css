@@ -17,7 +17,7 @@ body {
     margin: 30px 120px 80px 120px;
     height: 550px;
     border-radius: 20px;
-    background-image: linear-gradient(to left, #7c76762b, #242020d1), url('/images/messi.jpg');
+    background-image: linear-gradient(to left, #7c76762b, #242020d1), url("./top-banner.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 }
